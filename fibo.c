@@ -4,7 +4,6 @@ void main () {
     int nb = 0;
 
     scanf("%d", &nb);
-    printf("%d\n", nb);
 
     int t[nb];
     t[0] = 1;
