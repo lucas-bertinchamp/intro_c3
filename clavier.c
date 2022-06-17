@@ -2,6 +2,6 @@
 
 void main() {
     char str[100];
-    scanf("%[^\n]", &str);
+    scanf("%[^\n]", str);
     printf("%s\n", str);
 }
