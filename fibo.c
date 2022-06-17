@@ -1,12 +1,19 @@
 #include <stdio.h>
 
-int main (int n) {
-    int t[n];
+void main () {
+    int nb = 0;
+
+    scanf("%d", &nb);
+    printf("%d\n", nb);
+
+    int t[nb];
     t[0] = 1;
     t[1] = 1;
-    for (int i = 2; i < n; ++i){
+
+    for (int i = 2; i < nb; ++i){
         t[i] = t[i-1] + t[i-2];
     }
-    printf("Le n-ieme nombre de fibonacci est %d\n", t[n-1]);
+
+    printf("Le %d-ieme nombre de fibonacci est %d\n", nb, t[nb-1]);
 }
 
